@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <style>
+        body {
+            margin: 0;
+            border: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background: rgb(160, 144, 144)
+        }
+
+        .main {
+            width: 90%;
+            max-width: 500px;
+            background: linear-gradient(135deg, #152523, #5b548a);
+            color: #fff;
+            margin: 100px auto 0;
+            border-radius: 20px;
+            padding: 40px 35px;
+            text-align: center;
+        }
+        #input{
+              height: 30px;
+              width: 200px;
+              border-radius: 10px;
+        }
+        #button{
+            height: 25px ;
+            border-radius: 10px;
+        }
+        #output{
+            color: rgb(225, 224, 229);
+            font-style: oblique;
+            font-size: 50px;
+            
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2 style=" padding: 10px;">Wikipedia</h2>
+        <input type="text" placeholder="search hear" id="input">
+        <button id="button" onclick="search()">search</button>
+        <p id="output"></p>
+    </div>
+    <script>
+        function search() {
+            var searchInput = document.getElementById("input").value
+            var searchOutput = document.getElementById("output");
+            searchOutput.innerHTML = searchInput
+        }
+    </script>
+</body>
+
+</html>
